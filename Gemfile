@@ -3,6 +3,17 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
 
+gem "simple_form", github: "heartcombo/simple_form"
+
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
+gem "geocoder"
+
+gem 'stimulus-rails', '~> 1.0', '>= 1.0.4'
+
+gem 'webpack-rails', '~> 0.9.11'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6'
 # Use sqlite3 as the database for Active Record
